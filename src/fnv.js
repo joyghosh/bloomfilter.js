@@ -24,7 +24,7 @@ function fnv_1a(value){
 		hash = fnv_multiply(hash);
 	}
 
-	return hash;
+	return hash >>> 0;
 }
 
 //FNV step 1:hash = hash XOR byte_of_data.

@@ -4,15 +4,47 @@
 		<meta charset="utf-8">
 		<title>Test page</title>
 		<script type="text/javascript" src="fnv.js"></script>
+		<script type="text/javascript" src="bitview.js"></script>
+		<script type="text/javascript" src="bloomfilter.js"></script>
 		<script type="text/javascript">
-			function calculate_FNV_Hash(){
-				var hash1 = fnv_1a("Joy Ghosh");
-				console.log(hash1.toString(16));
+			
+			function calculate_fnv_hash(){
+				var data = document.getElementsByName("key-value")[0].value;
+				//alert(data);
+				console.log((fnv_1a(data)).toString(16));
+			}
+
+			//Initialize Bloom filter.
+			var filter = new BloomFilter(100000);
+
+			function add_to_filter(){
+				var data = document.getElementsByName("add-value")[0].value;
+				console.log("Adding "+data+" to filter....");
+				filter.add(data);
+				console.log("Added "+data+" to filter.");
+			}
+
+			function lookup_in_filter(){
+				var data = document.getElementsByName("search-value")[0].value;
+				console.log("Looking for "+data+" in filter....");
+				if(filter.test(data)){
+					alert("Maybe present.");
+				}else{
+					alert("Definitely not present.");
+				}
 			}
 		</script>
 	</head>
 
 	<body>
-		<button onclick="calculate_FNV_Hash()">Find FNV</button>
+		Insert value: </br>
+		<input type="text" name="add-value"> </br>
+		<button onclick="add_to_filter()">Add to filter</button></br></br>
+		Lookup value: </br>
+		<input type="text" name="search-value"> </br>
+		<button onclick="lookup_in_filter()">Lookup value</button></br></br>
+		Key value: </br>
+		<input type="text" name="key-value"> </br>
+		<button onclick="calculate_fnv_hash()">Find FNV hash</button></br></br>
 	</body>
 </html>
