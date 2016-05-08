@@ -15,6 +15,7 @@ const N = 3864292196;
 //Murmurhash3 implementation.
 function murmur3_32(key, len, seed){
 	
+	var uint32_array = new Uint32Array(key);
 	var hash = seed;
 	
 	//For each 4 bytes chunk.
