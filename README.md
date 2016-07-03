@@ -1,7 +1,7 @@
 # bloomfilter.js
 Bloom filter implementation in javascript. It relies following two non-cryptographic hash functions.
 - Fowler–Noll–Vo hash function.
-- Murmur3 hash function. (Not currently supported)
+- Murmur3 hash function. (currently not supported)
 
 #	References
 
