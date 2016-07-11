@@ -25,7 +25,7 @@ var BloomFilter = function(n){
 
 //Generate hash value.
 BloomFilter.prototype.calculateHash = function(x,m,i){
-	return ((fnv_1a(x) + (i*fnv_1a(x)))%m);										//Double hash technique.
+	return ((fnv_1a(x) + (i*one_at_a_time_hash(x)))%m);							//Double hash technique.
 }
 
 //Looks for membership.
@@ -48,4 +48,14 @@ BloomFilter.prototype.add = function(data){
 		hash = this.calculateHash(hash, this.m, i);
 		this.bitview.set(hash);
 	}
+}
+
+//For visualization. Return the bitview's length.
+BloomFilter.prototype.bytelength = function(){
+	return this.bitview.length();
+}
+
+//Return the bitview object.
+BloomFilter.prototype.view = function(){
+	return this.bitview.view();
 }

@@ -32,3 +32,17 @@ BitView.prototype.clear = function(index){
 	var offset = index & 0x7;
 	this.unit8[index >> 3] &= ~(0x80 >> offset);
 }
+
+/**
+* Returns the byte length of this array buffer.
+*/ 
+BitView.prototype.length = function(){
+	return this.unit8.byteLength;
+}
+
+/**
+* Returns the array buffer.
+*/
+BitView.prototype.view = function(){
+	return this.unit8;
+}

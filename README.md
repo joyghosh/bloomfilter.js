@@ -1,18 +1,15 @@
 # bloomfilter.js
-Bloom filter implementation in javascript. It relies following two non-cryptographic hash functions.
+Bloom filter is a space efficient probablistic data-structure. This implementation relies on following non-cryptographic hash functions.
 - Fowler–Noll–Vo hash function.
-- Murmur3 hash function. (currently not supported)
+- Jenkins hash function.
 
 #	References
 
+* [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
 * [Fowler-Noll-Vo wikipedia](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function#FNV-1a_hash)
-* [Murmur3 Hash wikipedia](https://en.wikipedia.org/wiki/MurmurHash)
+* [Jenkins Hash wikipedia](https://en.wikipedia.org/wiki/Jenkins_hash_function)
 
-#	Todos
-
-* Murmur3 hash implementation.
-
-#	License
+# License
 
 The MIT License (MIT)
 
