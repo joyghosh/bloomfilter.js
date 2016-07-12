@@ -3,6 +3,29 @@ Bloom filter is a space efficient probablistic data-structure. This implementati
 - Fowler–Noll–Vo hash function.
 - Jenkins hash function.
 
+### Installation
+
+```sh
+$ npm install bloomfilter.js
+```
+
+### Usage
+
+```sh
+var bloom = require('bloomfilter.js');
+
+#constructor-arg value: probable number of elements in the filter.
+var filter = new bloom(100);
+
+filter.add("test-data 1");
+filter.add("test-data 2");
+
+console.log(filter.test("test-data 3"));	#false		
+console.log(filter.test("test-data 4"));	#false
+console.log(filter.test("test-data 1"));	#true
+console.log(filter.test("test-data 2"));	#true
+```
+
 #	References
 
 * [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)

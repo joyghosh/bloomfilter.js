@@ -1,14 +1,23 @@
 {
   "name": "bloomfilter.js",
-  "version": "1.1.0", 
+  "version": "0.0.1", 
   "scripts": {
     "test": ""
   }, 
-  "main": "./src/bloomfilter.js", 
+  "main": "index.js", 
   "repository": {
     "type": "git", 
     "url" : "https://github.com/joyghosh/bloomfilter.js.git"
-  }, 
+  },
+  "keywords": [
+    "bloom",
+    "bloom-filter",
+    "filter",
+    "bloomfilter",
+    "bloom filter"
+  ], 
+  "author": "Joy Ghosh <joyghosh007@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "mail": "joyghosh007@gmail.com", 
     "url" : "https://github.com/joyghosh/bloomfilter.js/issues"
