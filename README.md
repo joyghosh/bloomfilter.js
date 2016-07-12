@@ -26,13 +26,13 @@ console.log(filter.test("test-data 1"));	#true
 console.log(filter.test("test-data 2"));	#true
 ```
 
-#	References
+###	References
 
 * [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter)
 * [Fowler-Noll-Vo wikipedia](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function#FNV-1a_hash)
 * [Jenkins Hash wikipedia](https://en.wikipedia.org/wiki/Jenkins_hash_function)
 
-# License
+### License
 
 The MIT License (MIT)
 
