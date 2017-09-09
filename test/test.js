@@ -32,7 +32,6 @@ describe("BloomFilter tests", function(){
         expect(deserialized.test("Some other value")).to.equal(true);
 
         expect(deserialized.test("Yet another value")).to.equal(false);
-        // console.log(JSON.stringify(deserialized).length);
     });
   });
 });
