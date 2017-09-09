@@ -24,6 +24,12 @@ console.log(filter.test("test-data 3"));	#false
 console.log(filter.test("test-data 4"));	#false
 console.log(filter.test("test-data 1"));	#true
 console.log(filter.test("test-data 2"));	#true
+
+#serialization
+var json = filter.serialize();
+
+#deserialization
+var deserialized_filter = bloom.deserialize(json);
 ```
 
 ###	References
