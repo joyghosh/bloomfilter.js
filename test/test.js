@@ -3,40 +3,6 @@ var bloom = require("../index.js");
 
 var filter = new bloom(1000);
 
-// filter.add("test-data 1");
-// filter.add("test-data 2");
-// filter.add("tkksdjlkdjs");
-// filter.add("dslkjdsldshsdkhj");
-// filter.add("Joydnsbnmbsnmsba");
-// filter.add("tesak");
-// filter.add("1223262738");
-// filter.add("asjdlsad,9ads02");
-//
-// console.log(filter.test("test-data 1"));
-// console.log(filter.test("test-data 2"));
-//
-// var s = filter.serialize();
-// console.log(s);
-// var d = bloom.deserialize(s);
-// console.log(d);
-// console.log(d.test("test-data 1"));
-// console.log(d.test("test-data 4"));
-// d.add("test-data 4");
-// console.log(d.test("test-data 4"));
-// console.log(d.test("tkksdjlkdjs"));
-// console.log(d.test("Joydnsbnmbsnmsba"));
-// console.log(d.test("asjdlsad,9ads02"));
-
-// var deserialized = JSON.parse(serialized);
-
-// console.log(filter.serialize());
-// var str = Array.prototype.join.call(filter.view(), ",");
-// console.log(str);
-
-// var arr = str.split(",")
-//       , view = new Uint8Array( arr );
-// console.log(view.buffer);
-
 describe("BloomFilter tests", function(){
   //add and test.
   describe("add and test", function(){
