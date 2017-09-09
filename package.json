@@ -1,13 +1,13 @@
 {
   "name": "bloomfilter.js",
-  "version": "0.0.1", 
+  "version": "0.0.1",
   "scripts": {
-    "test": ""
-  }, 
-  "main": "index.js", 
+    "test": "mocha"
+  },
+  "main": "index.js",
   "repository": {
-    "type": "git", 
-    "url" : "https://github.com/joyghosh/bloomfilter.js.git"
+    "type": "git",
+    "url": "https://github.com/joyghosh/bloomfilter.js.git"
   },
   "keywords": [
     "bloom",
@@ -15,17 +15,21 @@
     "filter",
     "bloomfilter",
     "bloom filter"
-  ], 
+  ],
   "author": "Joy Ghosh <joyghosh007@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "mail": "joyghosh007@gmail.com", 
-    "url" : "https://github.com/joyghosh/bloomfilter.js/issues"
-  }, 
+    "mail": "joyghosh007@gmail.com",
+    "url": "https://github.com/joyghosh/bloomfilter.js/issues"
+  },
   "contributors": [
-     {
-       "name" : "Joy Ghosh", 
-       "email": "joyghosh007@gmail.com"
-     }
-  ]
+    {
+      "name": "Joy Ghosh",
+      "email": "joyghosh007@gmail.com"
+    }
+  ],
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
+  }
 }
