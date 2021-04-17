@@ -14,8 +14,10 @@ $ npm install bloomfilter.js
 ```sh
 var bloom = require('bloomfilter.js');
 
-#constructor-arg value: probable number of elements in the filter.
-var filter = new bloom(100);
+#constructor-args 
+#arg1: probable number of elements in the filter.
+#arg2: optional false_postive_tolerance argument
+var filter = new bloom(100,0.00001); 
 
 filter.add("test-data 1");
 filter.add("test-data 2");
@@ -42,7 +44,7 @@ var deserialized_filter = bloom.deserialize(json);
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Joy Ghosh
+Copyright (c) 2021 Joy Ghosh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,7 +1,7 @@
 var expect = require("chai").expect;
 var bloom = require("../index.js");
 
-var filter = new bloom(1000);
+var filter = new bloom(1000, 0.01);
 
 describe("BloomFilter tests", function(){
   //add and test.
