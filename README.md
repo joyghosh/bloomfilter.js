@@ -40,6 +40,12 @@ var deserialized_filter = bloom.deserialize(json);
 * [Fowler-Noll-Vo wikipedia](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function#FNV-1a_hash)
 * [Jenkins Hash wikipedia](https://en.wikipedia.org/wiki/Jenkins_hash_function)
 
+### Donate 
+
+I would highly appreciate if you become my patron by simply clicking on this button
+
+[![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/joyghosh)
+
 ### License
 
 The MIT License (MIT)
