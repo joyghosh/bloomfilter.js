@@ -42,7 +42,7 @@ var deserialized_filter = bloom.deserialize(json);
 
 ### Donate 
 
-I would be highly appreciate if you become my patron by simply clicking on this button
+I would highly appreciate if you become my patron by simply clicking on this button
 
 [![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/joyghosh)
 
